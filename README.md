@@ -1,0 +1,5 @@
+- CORS over dev proxy. Reason: single dev origin, no cookie-based auth planned soon.
+- No AllowCredentials (header-based JWT planned for this project).
+- Jwt:Key in appsettings is a DEV PLACEHOLDER. Move to user-secrets before Phase 2.
+- Pipeline order: CORS → HTTPS → AuthN → AuthZ → Controllers.
+- Known risk: none (dev has prior .NET 10 experience).
